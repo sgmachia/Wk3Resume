@@ -1,0 +1,73 @@
+/* Color Palette:
+#488286 - steel teal
+#483C46 - dark liver (purpley brown)
+#F25F5C - fire opal (red-orange)
+#FBF7F4 - isebelline (eggshell)
+#EFD28D - buff (dusty yellow)
+*/
+
+/* Global Styles
+-------------------------------------------
+*/
+body {
+    color: #483C46;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #EFD28D;
+}
+a:hover {
+    text-decoration: none;
+}
+/* Profile
+-------------------------------------------
+*/
+header {
+    background-color: #488286;
+    color: #FBF7F4;
+}
+
+
+
+/* Portfolio
+-------------------------------------------
+*/
+.portfolio {
+    background-color: #FBF7F4;
+}
+.portfolio a {
+    color: #F25F5C;
+}
+.portfolio .btn {
+    color: #F25F5C;
+    background-color: #EFD28D;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.portfolio .btn:hover {
+    background: rgba(239,210,141,0.6);
+}
+/* Experience
+-------------------------------------------
+*/
+.experience {
+    background-color: #FBF7F4;
+}
+
+/* Education
+-------------------------------------------
+*/
+.education {
+    background-color: #FBF7F4;
+}
+
+/* Contact Info
+-------------------------------------------
+*/
+footer {
+    background-color: #488286;
+    color: #FBF7F4;
+}
