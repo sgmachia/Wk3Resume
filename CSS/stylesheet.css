@@ -9,8 +9,21 @@
 /* Global Styles
 -------------------------------------------
 */
+
+html { /*note-this should be standard in all yr css*/
+    box-sizing: border-box;
+}
+*, *:before, *:after { /*note-this should be standard in all yr css*/
+    box-sizing: inherit;
+}
 body {
     color: #483C46;
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgba(72,130,134,0.6);
 }
 img {
     width: 300px;
@@ -21,20 +34,42 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1 {
+    font-size: 70px;
+    font-weight:400;
+    line-height: 1;
+    text-shadow: 4px 2px #483C46;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+h1, h2 {
+    font-family: 'Fraunces', serif;
+    margin: 0;
+}
+h3 {
+    line-height: .5;
+}
+.contwrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 15px 20px 15px;
+}
+
 /* Profile
 -------------------------------------------
 */
 header {
     background-color: #488286;
     color: #FBF7F4;
+    padding-bottom: 25px;
 }
-
-
 
 /* Portfolio
 -------------------------------------------
 */
-.portfolio {
+.portfolio .contwrap {
     background-color: #FBF7F4;
 }
 .portfolio a {
@@ -46,28 +81,70 @@ header {
     text-decoration: none;
     padding: 5px;
     border-radius: 4px;
+    display: inline-block;
 }
 .portfolio .btn:hover {
     background: rgba(239,210,141,0.6);
+    box-shadow: 2px 2px 5px #EFD28D; 
 }
+.port-item {
+    overflow: hidden;
+    padding: 25px;
+    border-bottom: 3px dotted #483C46;
+}
+.port-item img {
+    float: left;    
+    margin-right: 25px;
+    padding: 5px;
+    border: medium double #488286;
+    border-radius: 3px;
+}
+.port-item h3 {
+    margin-top: 0;
+}
+.summary {
+    font-style: italic;
+    line-height: 1.25;    
+}
+
 /* Experience
 -------------------------------------------
 */
-.experience {
+.experience .contwrap {
     background-color: #FBF7F4;
+}
+.employer {
+    font-weight: 500;
+    line-height: .5;
+}
+.dates {
+    font-style: italic;
+    line-height: .5;
+}
+#exp-item {
+    border-bottom: 3px dotted #483C46;
 }
 
 /* Education
 -------------------------------------------
 */
-.education {
+.education .contwrap {
     background-color: #FBF7F4;
 }
-
+.degree {
+    font-weight: 500;
+    line-height: .5;
+}
+.awards {
+    font-style: italic;
+}
 /* Contact Info
 -------------------------------------------
 */
 footer {
     background-color: #488286;
     color: #FBF7F4;
+}
+.contact {
+    padding-right: 35px;
 }
